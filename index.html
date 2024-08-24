@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+            function changelang(){
+                const x = document.getElementById('changer');
+                const s = document.getElementById('change1');
+                const z = document.getElementById('change2');
+                const t = document.getElementById('test');
+
+                
+                if(x.style.marginLeft=='-3.5cm'){
+                    
+                    s.style.display='none';
+                    x.style.marginLeft='-1.5cm';
+                    z.style.display='flex';
+                    console.log('pressed')
+                    // t.innerText='hello world this is GodFirt'
+                    
+                }else{
+                    z.style.display='none';
+                    x.style.marginLeft='-3.5cm'
+                    s.style.display='flex';
+                    // t.innerText='Bonjour le monde celui ci est Dieu Devant'
+                    
+
+                }}
+
+
+        function mmenu(){
+            const x = document.getElementById('f1');
+            x.style.display='grid';
+            
+        }
+        function show(elid){
+            const t= document.getElementById(elid);
+            t.style.display='block';
+            
+        }
+        function back(idd){
+            const x = document.getElementById(idd);
+            x.style.display='none';
+            
+        }
+        function anim(i){
+            const x = document.getElementById(i);
+            x.style.animationPlayState='running';
+        }
+        function anim2(i){
+            const x = document.getElementById(i);
+            x.style.animationPlayState='paused';
+        }
+        function des(){
+            const x = document.getElementById('des');
+            const s = document.getElementById('imm');
+            
+            if (s.style.animationPlayState='running'){
+                s.style.animationPlayState='paused';
+                s.style.animationPlayState='running';
+            }else {s.style.animationPlayState='running';}
+            if (x.style.animationPlayState='running'){
+                x.style.animationPlayState='paused';
+                x.style.animationPlayState='running';
+            }else {x.style.animationPlayState='running';}
+            
+
+        }
+
+        function langchange(){
+            console.log('clic')
+            const txt = document.getElementById('langtxt');
+            const move = document.getElementById('langim');
+            const txt2 = document.getElementById('langtxt2');
+            for (let i = 0;i++;){
+                if (txt.innerText =!'Francais'){
+                txt2.style.display='none';
+                move.style.marginLeft='-101px';
+                txt.style.display='flex';
+                } else{
+                    txt.style.display='none';
+                    move.style.marginLeft='-40px';
+                    txt2.style.display='flex';
+                }
+                if (i<5)break;
+
+                
+            
+            }
+            
+            }
+        async function dtail (){
+            const x = document.getElementById('detail')
+            const s = document.getElementById('done')
+            x.style.display='flex';
+            await new Promise (t=> setTimeout(t,4000))
+            x.style.display='none';
+
+        }
+    </script>
+    <style>
+
+        @keyframes frame1 {
+            0%{border-width: 5px;border-style: solid;;}
+            1%{border-width: 5px;border-style: solid;border-color: red;}
+            25%{border-width: 5px;border-style: solid;border-color: rgb(106, 0, 255);}
+            50%{border-width: 5px;border-style: solid;border-color: rgb(255, 0, 157);}
+            75%{border-width: 5px;border-style: solid;border-color: rgb(26, 255, 0);}
+            100%{border-width: 5px;border-style: solid;border-color: rgb(255, 208, 0);}
+        }
+
+        @keyframes frame2 {
+            0%{ transform: rotate(0deg);}
+            10%{ transform: rotate(45deg);}
+            20%{ transform: rotate(90deg);}
+            30%{ transform: rotate(135deg);}
+            40%{ transform: rotate(180deg);}
+            50%{ transform: rotate(225deg);}
+            60%{ transform: rotate(270deg);}
+            80%{ transform: rotate(315deg);}
+            100%{ transform: rotate(360deg);}
+        
+        }
+        @keyframes frame3 {
+            0%{padding-right: 5cm;}
+            50%{padding-right:0;}
+            100%{padding-right:5cm;}
+        }
+        .langbutt{
+                display: flex;
+                height: 1.5cm;
+                width: 4cm;
+                background-color: rgba(0, 0, 0, 0);
+                position: relative;
+                margin-top: 25px;
+                border: 0;
+            }
+        @media only screen and (max-width: 767px){
+        .langbutt{
+            display: none;
+            background-color: green;
+      
+        
+        }
+
+        }
+            .langbuttimg1{
+                height: 1.5cm;
+                width: 3.5cm;
+                margin-left: -7px;
+                position: relative;
+            }
+            @media only screen and (max-width: 767px){
+            .langbuttimg1 {
+                height: 30px;
+                width: 2cm;
+            }
+        }
+            .langbuttimg2{
+                float: left;
+                width: 1.5cm;
+                height: 1.5cm;
+                position: relative;
+                margin-left: -3.5cm;
+                border-radius: 30%;
+            }
+            @media only screen and (max-width: 767px){
+            .langbuttimg2{
+                display: inline;
+                height:30px ;
+                width: 25px;
+                margin-left: -73px;
+
+
+            }
+        }
+            .langbutttxt1{
+                display: flex;
+                height: 1cm;
+                width: 2cm;
+                position: relative;
+                font-size: 18px;
+            
+            }
+            .langbutttxt2{
+                display: none;
+                height: 1cm;
+                width: 2cm;
+                position: relative;
+                font-size: 18px;
+                margin-left: -3.2cm;
+            
+            }
+
+        body {
+            z-index: -1;
+            margin: 0;
+            max-width: 100%;
+        }
+        header {
+            /* background-color: rgb(255, 255, 255); */
+            width: 100%;
+            height: 17cm;
+            border-bottom-left-radius: 20%;
+            border-bottom-right-radius: 20%;
+            /* background-color: blue; */
+            
+        
+        }
+        @media only screen and (max-width: 767px){
+            header{
+                height: 10cm;
+            }
+        }
+        .im1 {
+            width: 100%;
+            height: 100%;
+            border-bottom-left-radius: 20%;
+            border-bottom-right-radius: 20%;
+           
+        }
+        @media only screen and (max-width: 767px){
+            .im1{
+                height: 10cm;
+            }
+        }
+
+        .menu1 {
+            
+            width: 40%;
+            float: right;
+           
+            margin-top: 25px;
+            margin-right: 56px;
+            display: flex;
+            
+           position: relative;;
+            margin-top: -16.5cm;
+
+        }
+        @media only screen and (max-width: 767px){
+            .menu1{
+                width: 10cm;
+                margin-right:-2.2cm;
+                margin-top: -10cm;
+            }}
+        .lmenu {
+            color: rgb(250, 243, 231);
+            text-decoration: none;
+            font-size: 30px;
+            margin-left: 10px;
+            background-color: rgba(128, 128, 128, 0.623);
+            width: 3cm;
+            text-align: center;
+            border-radius: 20%;
+            height: 1.2cm;
+            
+        }
+        @media only screen and (max-width: 767px){
+            .lmenu{
+                margin-left: 0px;
+                width: 1.5cm;
+                font-size: 15px;
+                margin-left: 5px;
+                height: 0.7cm;
+            }
+        }
+
+        .lbt {
+            display: flex;
+            position: relative;
+            /* background-color: rgba(146, 146, 146, 0.406); */
+            margin-top: -16.5cm;
+            width: 2.5cm;
+            height: 1cm;
+            margin-left: 1cm;
+            
+            /* margin-left: -25cm; */
+            
+        }
+        .langim{
+            display: flex;
+            width: 100%;
+            height: 1cm;
+            /* background-color: rgb(255, 0, 0); */
+            position: relative;
+        }
+        
+        .butimg {
+            height: 1.5cm;
+            width: 2cm;
+            margin-left: 10px;
+            background-color: rgba(255, 255, 255, 0);
+            
+            
+        }
+        @media only screen and (max-width: 767px){
+            .butimg{
+                width: 1cm;
+                height: 0.7cm;
+                border: 0;
+                margin-top: 5px;
+            }
+        }
+        .menu2 {
+            margin: 5px;
+            height: 17cm;
+            width: 98%;
+            background-color: rgba(0, 0, 0, 0.733);
+            margin-top: -17cm;
+            margin-left: 0.3cm;
+            position: relative;
+            display: none;
+            
+            
+        }
+        @media only screen and (max-width: 767px){
+            .menu2{
+                margin-left: 0cm;
+                height: 8cm;
+                margin-top: -8.5cm;
+                width: 100%;
+
+            }
+        }
+        .lf1 {
+            width: 80%;
+            height: 1.5cm;
+            background-color: white;
+            text-align: center;
+            margin-left: 10%;
+            border-bottom-left-radius: 30%;
+            border-bottom-right-radius: 30%;
+            animation-name: frame1;
+            animation-play-state: paused;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @media only screen and (max-width: 767px){
+            .lf1{
+                height: 1cm;
+                font-size: 20px;
+            }
+        }
+        .wel {
+            background-color: rgba(0, 0, 0, 0.322);
+            height: 10cm;
+            width: 20cm;
+            position: relative;
+            margin-top: -10.1cm;
+            display: block;
+            margin-left: 25%;
+            border-bottom-left-radius: 25%;
+            border-bottom-right-radius: 20%;
+            
+        }
+        @media only screen and (max-width: 767px){
+            .wel {
+                height: 5.5cm;
+                margin-left: 0;
+                background-color: rgba(12, 7, 73, 0.427);
+                margin-top: -6.2cm;
+                width: 100%;
+            }
+        
+        }
+
+        
+        .logo {
+            height: 3cm;
+            width: 3cm;
+            border-radius: 30%;
+            margin-left: 40%;
+        }
+        @media only screen and (max-width: 767px){
+            .logo{
+                width: 2cm;
+                height: 2cm;
+                margin-top: -4cm;
+            }
+        .title1{
+            font-size: 35px;
+            color: rgb(247, 198, 92);
+
+        }
+        @media only screen and (max-width: 767px){
+            .title1{
+                font-size: 25px;
+                
+            }
+        }
+        }
+        .par2 {
+            color: rgb(229, 242, 243);
+            font-size:25px;
+            font-style: normal;
+            position: relative;
+            line-height: 35px;
+            margin-top: -0.5cm;
+            margin-top: 10px;
+            text-align: center;
+        }
+        @media only screen and (max-width: 767px){
+        .par2{
+            font-size: 15px;
+            line-height: 22px;
+            margin-top: -0.2cm;
+            margin-left: 10px;
+            text-align: center;
+        }
+        
+        }
+        .desc {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 12cm;
+            /* display: flex; */
+            overflow: hidden;
+        }
+        @media only screen and (max-width: 767px){
+            .desc{
+                /* background-color: black; */
+                overflow: none;
+
+            }
+        }
+        .im2 {
+            height: 100%;
+            width:40%;
+            overflow: hidden;
+            border-bottom-left-radius: 20%;
+        }
+        @media only screen and (max-width: 767px){
+        .im2 {
+            animation-play-state: paused;
+            margin-left: 3cm;
+            margin-top: 10px;
+        }
+
+        }
+        .imm2 {
+            position: relative;
+            border-top-right-radius: 40%;
+            height: auto;
+            width: 10cm;
+            animation-name: frame2;
+            animation-play-state: paused;
+            animation-duration: 1000ms;
+            overflow: hidden;
+        }
+        @media only screen and (max-width: 767px){
+            .imm2{
+                width: 3cm;
+                height: 4cm;
+                animation-name: frame22;
+                border-top-right-radius: 0;
+                border-radius: 30%;
+            }
+        }
+        .ddes {
+            display: block;
+            overflow: hidden;
+            height: 90%;
+            width: 0cm;
+            padding-right: 27.8cm;
+            margin-right: 2.2cm;
+            background-image: url('/media/Summer.jpeg');
+            background-size: cover;
+            border-top-left-radius: 40%;
+            border-bottom-right-radius: 50%;
+            position: relative;
+            float: right;
+            margin-top: -10.76cm;
+            animation-name: frame3;
+            animation-play-state: paused;
+            animation-duration: 1000ms;
+            
+        }
+        @media only screen and (max-width: 767px){
+            .ddes {
+                animation-name: fram;
+                padding-right: 0;
+                margin-right: 0;
+                width:95%;
+                float: left;
+                margin-top: -7.5cm;
+                height: 6.9cm;
+                border-top-left-radius: 20%;
+                border-bottom-right-radius: 30%;
+                overflow: none;
+                margin-left: 10px;
+            }
+        
+        }
+        .tt1 {
+            position: relative;
+            margin-left: 9cm;
+            font-size: 40px;
+            margin-top: -11cm;
+            color: rgb(248, 165, 233);
+        }
+        @media only screen and (max-width: 767px){
+            .tt1{
+                position: relative;;
+                font-size: 25px;
+                margin-left: 3cm;
+                margin-top: -6.5cm;
+                }
+        }
+        .par1 {
+            position: relative;
+            color: rgb(247, 229, 200);
+            font-size: 25px;
+            margin-left: 2cm;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+            
+
+        }
+        @media only screen and (max-width: 767px){
+            .par1{
+                font-size: 15px;
+                margin-left: 0;
+                line-height: 21px;
+                margin-top: -0.5cm;
+            }
+        }
+        .lf2 {
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            text-decoration: none;
+        }
+        .service {
+            overflow: hidden;
+            width: 100%;
+            height: 15cm;
+            
+            background-color: rgb(0, 0, 0);
+            background-size: cover;
+            border-top-right-radius: 20%;
+            border-top-left-radius: 20%;
+            
+        }
+        @media only screen and (max-width: 767px){
+            .service{
+               height: 15cm;
+            }
+        }
+        .par3 {
+            /* background-color: gray; */
+            color: rgba(255, 183, 0, 0.929);
+            font-family: 'Franklin Gothic Medium';
+            font-size: 45px;
+            position: relative;
+            margin-left: 40%;
+            margin-top: -16cm;
+            background-color: rgba(133, 133, 134, 0.792);
+            height: 1.5cm;
+            width: 6cm;
+            border-radius: 20%;
+        }
+        @media only screen and (max-width: 767px){
+            .par3{
+                font-size: 30px;
+                margin-left: 2cm;
+                width: 4.5cm;
+                height: 1.2cm;
+            }
+        }
+        .ser {
+            /* background-color: rgb(0, 0, 0); */
+            margin-top: -0.3cm;
+            height: 85%;
+            width: 100%;
+            position: relative;
+            display: flex;
+            gap: 20px;
+        }
+        @media only screen and (max-width: 767px){
+            .ser{
+               display: block;
+               overflow: auto;
+               margin-top: 0;
+               overflow-y: scroll;
+               scrollbar-width: 1cm;
+               scrollbar-color: rgb(0, 0, 0) rgb(76, 0, 255);
+               
+            }
+        }
+        .covs {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-image: url('/media/sback.jpeg');
+            background-color: rgba(195, 195, 196, 0.68);
+            background-size: cover;
+            opacity: 60%;
+            
+            
+            /* display: none; */
+        }
+        .cyber {
+            border-top-left-radius: 20%;
+            border-top-right-radius: 20%;
+            width: 22%;
+            height: 99%;
+            background-color: rgba(0, 0, 0, 0.667);
+            display: flexbox;
+            animation-name: frame1;
+            animation-play-state: paused;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            margin-top: 0.7cm;
+    }
+    @media only screen and (max-width: 767px){
+            .cyber{
+                width: 95%;
+                height: 95%;
+            }
+        }
+    .par4 {
+            color: rgb(255, 255, 255);
+            font-family: 'Franklin Gothic Medium';
+            font-size: 30px;
+            position: relative;
+            margin-left: 24%;
+            margin-top: 5px;
+    }
+    .sim {
+        height: 40%;
+        width: 90%;
+        margin-top: -0.5cm;
+        border-radius: 20%;
+        margin-left: 15px;
+    }
+    .stext{
+        height: 48%;
+        width: 90%;
+        /* margin-top: -0.5cm;
+        border-radius: 20%;
+        margin-left: 15px; */
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255, 255, 255, 0.121);
+        margin-left: 15px;
+        overflow: auto;
+        overflow-y: scroll;
+        scrollbar-color: rgb(25, 0, 255) rgb(17, 255, 0);
+        border-radius: 3%;
+        
+
+
+    }
+        .nw{
+            
+            border-top-left-radius: 20%;
+            border-top-right-radius: 20%;
+            width: 25%;
+            height: 99%;
+            background-color: rgba(0, 0, 0, 0.667);
+            display: flexbox;
+            animation-name: frame1;
+            animation-play-state: paused;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            margin-top: 0.7cm;
+        }
+        @media only screen and (max-width: 767px){
+            .nw{
+                width: 95%;
+                height: 95%;
+            }
+        }
+        .fs{
+            border-top-left-radius: 20%;
+            border-top-right-radius: 20%;
+            width: 25%;
+            height: 99%;
+            background-color: rgba(0, 0, 0, 0.667);
+            display: flexbox;
+            animation-name: frame1;
+            animation-play-state: paused;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            
+            margin-top: 0.7cm;
+        }
+        @media only screen and (max-width: 767px){
+            .fs{
+                width: 95%;
+                height: 95%;
+            }}
+        .TS {
+            border-top-left-radius: 20%;
+            border-top-right-radius: 20%;
+            width: 25%;
+            height: 99%;
+            background-color: rgba(0, 0, 0, 0.667);
+            display: flexbox;
+            animation-name: frame1;
+            animation-play-state: paused;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            
+            margin-top: 0.7cm;
+        }
+        @media only screen and (max-width: 767px){
+            .TS{
+                width: 95%;
+                height: 95%;
+            }}
+        
+        .coch {
+            border-top-left-radius: 20%;
+            border-top-right-radius: 20%;
+            width: 25%;
+            height: 99%;
+            background-color: rgba(0, 0, 0, 0.667);
+            display: flexbox;
+            animation-name: frame1;
+            animation-play-state: paused;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            
+            margin-top: 0.7cm;
+        }
+        @media only screen and (max-width: 767px){
+            .coch{
+                width: 95%;
+                height: 95%;
+            }}
+        .link{
+            color: rgb(0, 0, 0);
+            position: relative;
+            background-color: rgb(0, 221, 254);
+            height: 1cm;
+            width: 2cm;
+            text-decoration: double rgb(25, 0, 255);
+            border-radius: 10%;
+        }
+
+        .done {
+            /* background-image: url('/media/dback.jpg'); */
+            /* background-repeat: no-repeat; */
+            background: repeating-radial-gradient(rgb(255, 0, 0),rgb(53, 109, 229));
+            background-size: cover;
+            background-color: rgb(75, 75, 77);
+            width: 100%;
+            height: 15cm;
+            border-bottom-left-radius: 20%;
+            border-top-right-radius: 10%;
+            display: flexbox;
+        }
+        @media only screen and (max-width: 767px){
+            .done{
+                height: 25cm;
+                width: 100%;
+            }}
+        .work {
+            /* background-color: rgb(0, 0, 0); */
+            height: 90%;
+            width: 100%;
+            display: flex;
+        }
+        @media only screen and (max-width: 767px){
+            .work{
+                display: block;
+            }}
+        .dtext{
+            background:repeating-radial-gradient(rgb(62, 26, 53),black);
+            height: 90%;
+            width: 13cm;
+            /* margin-left: 10px; */
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            border-bottom-left-radius: 30%;
+            border-top-right-radius: 30%;
+            text-align: center;
+            
+        }
+        @media only screen and (max-width: 767px){
+            .dtext{
+                overflow-y: scroll;
+                width: 100%;
+                font-size: 20px;
+                height: 8cm;
+
+            }}
+        .workpar{
+          font-size: 29px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        @media only screen and (max-width: 767px){
+            .workpar{
+                text-align: center;
+                font-size: 22px;
+                width: 90%;
+            }}
+        .ddone {
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0);
+            height: 90%;
+            width: 60%;
+            display: flex;
+            position: relative;
+            gap: 10px;
+        }
+        @media only screen and (max-width: 767px){
+            .ddone{
+                display: block;
+                width: 100%;
+            }}
+        .ets {
+            width: 5cm;
+            height: 5cm;
+            border-radius: 40%;
+            margin-top: 1cm;
+            margin-left: 1cm;
+        }
+        @media only screen and (max-width: 767px){
+            .ets{
+                margin-top: 0.5cm;
+                height: 3cm;
+                width: 3cm;
+            }}
+        .cds{
+            width: 10cm;
+            height: 5cm;
+            margin-top: 1cm;
+            margin-left: 20px;
+        }
+        @media only screen and (max-width: 767px){
+            .cds{
+                margin-top: 0.5cm;
+                width: 8.5cm;
+                height: 2cm;
+                margin-left: 10px;
+            }}
+        .bakita{
+            margin-left: -16cm;
+            margin-top: 7cm;
+            width: 12cm;
+            height: 5cm;
+            
+        }
+        @media only screen and (max-width: 767px){
+            .bakita{
+                width: 9cm;
+                height: 3cm;
+                margin-top: 0.3cm;
+                margin-left: 10px;
+            }}
+        .cfts{
+            border-radius: 10%;
+            width: 9cm;
+            height: 5cm;
+            margin-top: 7cm;
+            margin-left: 10px;
+        }
+        @media only screen and (max-width: 767px){
+            .cfts{
+                width: 9cm;
+                height: 3cm;
+                margin-top: 0.3cm;
+                margin-left: 10px;
+            }}
+        .ets1{
+            display: none;
+            width: 70%;
+            height: 18cm;
+            position: relative;
+            background:wheat;
+            margin-left: 6cm;
+            margin-top: -18.2cm;
+            border-radius: 5%;
+        }
+        @media only screen and (max-width: 767px){
+            .ets1{
+                margin-top: -20cm;
+                width: 100%;
+                margin-left: 0;
+                /* display: block; */
+                /* overflow: scroll; */
+                height: 30cm;
+                max-width: 100%;
+
+            }}
+        .etslvst{
+            position: relative;
+            display: flex;
+            height: 90%;
+            width: 100%;
+            /* background-color: black; */
+            border-radius: 6%;
+            margin-top: 15px;
+            gap: 1cm;
+        }
+        @media only screen and (max-width: 767px){
+            .etslvst{
+                background-color: rgba(0, 0, 0, 0);
+                display: block;
+                width: 100%;
+                /* margin-top: 10cm; */
+                /* margin-left: -10cm; */
+                height: 19.5cm;
+                margin-top: 13cm;
+                position: relative;
+            }}
+        .bacbut{
+            background-color: black;
+            background-size: cover;
+            position: relative;
+            height: 3cm;
+            width: 4cm;
+            margin-left: 0.3cm;
+        }
+        @media only screen and (max-width: 767px){
+            .bacbut{
+                height: 1cm;
+                width: 1.5cm;
+                margin-left: 0;
+                border-radius: 30%;
+                border: 3px solid red;
+                text-align: center;
+            }}
+        .etslogo{
+            border-radius: 45%;
+            width: 3cm;
+            height: 3cm;
+            position: relative;
+            margin-left: 40%;
+        }
+        @media only screen and (max-width: 767px){
+            .etslogo{
+                width: 2cm;
+                height: 2cm;
+                position: relative;
+                background-color: black;
+                /* display: none; */
+            }}
+        .etsgal{
+            position: relative;
+            display: flex;
+            width: 35%;
+            height:10cm ;
+            background-color: rgba(0, 0, 0, 0.137);
+            margin-top: 2cm;
+        }
+        @media only screen and (max-width: 767px){
+            .etsgal{
+                margin-top: 0;
+                width: 100%;
+                height: 10cm;
+                /* display: none; */
+            }}
+        .etsparr{
+            
+            overflow: auto;
+            scrollbar-color: rgb(255, 0, 0) rgb(240, 232, 8);
+            display: flexbox;
+            position: relative;
+            width: 60%;
+            background: radial-gradient(rgb(74, 64, 64) ,black);
+            height: 90%;
+            border-radius: 7%;
+            margin-top: -13.5cm;
+            margin-left: 12.5cm;
+            /* display: none; */
+        }
+        @media only screen and (max-width: 767px){
+            .etsparr{
+                position: relative;
+                width: 100%;
+                background-color: black;
+                /* height: 2cm; */
+                /* display: none; */
+                margin-left: 0cm;
+                margin-top: -12.9cm;
+            }}
+        .ims1{
+            width: 100%;
+            height: 100%;
+            border-radius: 40%;
+            margin-left: -7.5px;
+
+        }
+        .ims2{
+            width: 100%;
+            height: 100%;
+            margin-left: -7.5px;
+
+            /* margin-top: 1cm;
+            margin-left: 20px; */
+        }
+        .ims3{
+            width: 100%;
+            height: 100%;
+            margin-left: -7.5px;
+
+        }
+        .ims4{
+            border-radius: 10%;
+            width: 100%;
+            height: 100%;
+            margin-left: -7.5px;
+
+            /* margin-top: 7cm;
+            margin-left: 20px; */
+        }
+        .cds1 {
+            display: none;
+            width: 70%;
+            height: 18cm;
+            position: relative;
+            background-color: wheat;
+            margin-left: 6cm;
+            margin-top: -18cm;
+            border-radius: 5%;
+        }
+        @media only screen and (max-width: 767px){
+            .cds1{
+                margin-top: -20cm;
+                width: 100%;
+                margin-left: 0;
+                /* display: block; */
+                /* overflow: scroll; */
+                height: 30cm;
+                max-width: 100%;
+            }}
+        .bakita1{
+            display: none;
+            width: 70%;
+            height: 18cm;
+            position: relative;
+            background-color: wheat;
+            margin-left: 6cm;
+            margin-top: -18cm;
+            border-radius: 5%;
+        }
+        @media only screen and (max-width: 767px){
+            .bakita1{
+                margin-top: -20cm;
+                width: 100%;
+                margin-left: 0;
+                /* display: block; */
+                /* overflow: scroll; */
+                height: 30cm;
+                max-width: 100%;
+            }}
+        .cfts1{
+            display: none;
+            width: 70%;
+            height: 18cm;
+            position: relative;
+            background-color: wheat;
+            margin-left: 6cm;
+            margin-top: -18cm;
+            border-radius: 5%;
+        }
+        @media only screen and (max-width: 767px){
+            .cfts1{
+                margin-top: -20cm;
+                width: 100%;
+                margin-left: 0;
+                /* display: block; */
+                /* overflow: scroll; */
+                height: 30cm;
+                max-width: 100%;
+            }}
+        .etswork{
+            overflow: auto;
+            color: white;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        @media only screen and (max-width: 767px){
+            .etswork{
+                position: relative;
+                width: 100%;
+                overflow: visible;
+                font-size: 15px;
+                background-color: black;
+                margin: 0;
+            }}
+        .detail{
+            display: none;
+            width: 50%;
+            height: 6cm;
+            position: relative;
+            background-color: rgba(44, 245, 198, 0.909);
+            margin-left: 10cm;
+            margin-top: -10cm;
+            border-radius: 20%;
+        }
+        .txtgalest{
+            position: relative;
+            height: 2cm;
+            width: 9.5cm;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.591);
+            margin-left: -9.7cm;
+            margin-top: 8cm;
+            font-size: 25px;
+        }
+        @media only screen and (max-width: 767px){
+            .txtgalest{
+                font-size: 20px;
+                margin-left: -9.4cm;
+            }}
+        .txtxlass{
+                color: white;
+                font-size: 25px;
+            }
+            @media only screen and (max-width: 767px){
+            .txtxlass{
+                font-size: 15px;
+                position: relative;
+            }}
+        .apreciation {
+            background-color: aqua;
+            width: 100%;
+            height: 12cm;
+        }
+        footer {
+            background: radial-gradient(rgb(71, 52, 21),rgb(0, 0, 0));
+            width: 100%;
+            height: 12cm;
+            position: relative;
+            display: flex;
+        
+            /* font-size: 25px; */
+        
+        }
+        @media only screen and (max-width: 767px){
+            footer{
+                display: block;
+                height: 16cm;
+            }}
+        .footerservice {
+            width: 20%;
+            height: 100%;
+            display: grid;
+            position: relative;
+            color: bisque;
+            font-size: 25px;
+            margin-left: -2.5cm;
+            height: auto;
+            /* background-color: black; */
+
+        }
+        @media only screen and (max-width: 767px){
+            .footerservice{
+                font-size: 15px;
+                margin-left: 5cm;
+                margin-top: -9cm;
+                width: 30%;
+                display: block;
+                height: auto;
+            }}
+        .footerskills{
+            width: 20%;
+            height: 100%;
+            display: grid;
+            position: relative;
+            color: bisque;
+            font-size: 25px;
+            margin-left: -3cm;
+        }
+        @media only screen and (max-width: 767px){
+            .footerskills{
+                font-size: 15px;
+                margin-left: 0cm;
+                margin-top: 0;
+                width: 30%;
+                display: block;
+                background-color: black;
+                height: auto;
+            }}
+        .footercontact{
+            width: 20%;
+            height: 100%;
+            display: grid;
+            position: relative;
+            color: bisque;
+            font-size: 25px;
+        }
+        @media only screen and (max-width: 767px){
+            .footercontact{
+                display: block;
+                font-size: 15px;
+                width: 30%;
+                height: auto;
+                margin-top: -0.5cm;
+                background-color: black;
+                          
+            }}
+        .footersmedia{
+            color: bisque;
+            width: 20%;
+            height: 100%;
+            display: grid;
+            position: relative;
+            font-size: 25px;
+       
+        }
+        @media only screen and (max-width: 767px){
+            .footersmedia{
+                font-size: 15px;
+                margin-left: 5cm;
+                margin-top: 0;
+                display: block;
+                /* background-color: black; */
+                height: auto;
+                width: 40%;
+                background-color: black;
+            }}
+        .gf{
+            color: bisque;
+            width: 20%;
+            height: 100%;
+            display: grid;
+            position: relative;
+            font-size: 25px;
+            margin-left: 0.5cm;
+            height: auto;
+            
+            /* row-gap: -3cm; */
+        }
+        @media only screen and (max-width: 767px){
+            .gf{
+                background-color: black;
+                /* gap: 0cm; */
+                font-size: 15px;
+                margin-left: 0;
+                width: 30%;
+                display: block;
+                height: auto;
+            }}
+        .footertitle {
+           font-size: 45px;
+           max-height: 0.2cm;
+           text-decoration: underline double rgb(255, 0, 225) 3px;
+        }
+        @media only screen and (max-width: 767px){
+            .footertitle{
+                font-size: 17px;
+                max-height: 0.3cm
+            }}
+        .footlink1 {
+            color: white;
+            max-height: 0.2cm;
+            
+        }
+    </style>
+</head>
+<body>
+    <header id="first">
+        
+        <img src="media/bac.jpg" alt="background image" class="im1">
+        <div class="menu1">
+            <a href="#des" class="lmenu">About</a>
+            <a href="#service" class="lmenu">Service</a>
+            <a href="#done" class="lmenu">Trusts</a>
+            <a href="#contact" class="lmenu">Contacts</a>
+            <button class="butimg" onclick="mmenu()"><img style="margin-left: -7px;margin-top: -3px;height: 100%;width: 100%;" src="media/menu.png" alt="menu" ></button>
+
+        </div>
+        <div class="wel">
+            <img src="media/logo.jpg" alt="logo" class="logo">
+            <h2 class="par2">
+                <span class="title1">Welcome to our Website!!!</span>
+                In this modern digital world, there’s no doubt that 
+                technology is essential.It’s where imagination becomes
+                reality,simplifying our lives and making things
+                easier in all fields,whether it’s agriculture,commerce, health, etc.
+                If you want to know where we,<span style="color: rgb(255, 127, 242);">GF-company</span>,make an impact,
+                keep visiting our site. Thank.
+            </h2>
+        </div>
+        <div class="lbt">
+            <button class="langbutt" onclick="changelang()">
+                <img src="/media/lbutt1.png" alt="" class="langbuttimg1">
+                <img id="changer" src="/media/lbutt2.png" alt="" class="langbuttimg2">
+                <p id="change1" class="langbutttxt1">Francais</p>
+                <p id="change2" class="langbutttxt2">English</p>
+            </button>
+            
+        </div>
+    </header>
+    <div class="menu2" id="f1">
+        <button class="but2img" onclick="back('f1')"><img  style="margin-left: -16px;margin-top: -4px;" src="media/backb.png" alt=""></button>
+        <div id="f2" class="lf1" onmouseover="anim('f2')" onmouseout="anim2('f2')"><a href="cyber.html" class="lf2">Cyber Security</a></div>
+        <div id="f3" class="lf1" onmouseover="anim('f3')" onmouseout="anim2('f3')" ><a href="network.html" class="lf2">Networking</a></div>
+        <div id="f4" class="lf1" onmouseover="anim('f4')" onmouseout="anim2('f4')"><a href="fstack.html" class="lf2">Coding</a></div>
+        <div  id="f5" class="lf1" onmouseover="anim('f5')" onmouseout="anim2('f5')"><a href="support.html" class="lf2">Technical Support</a></div>
+        <div  id="f6" class="lf1" onmouseover="anim('f6')" onmouseout="anim2('f6')"><a href="coaching.html" class="lf2">Coaching</a></div>
+    </div>
+    <div id='f7' onmouseover="des()"  class="desc">
+        <div id="imm" class="im2" >
+            <img class="imm2" src="media/img2.jpg" alt="img2">
+        </div>
+        <div class="ddes" id="des">
+            <div style="background-color: rgba(0, 0, 0, 0.646);height: 100%;width: 32cm;margin-top: 1cm;margin-top: -0.1cm;"></div>
+            <h2 class="tt1">Welcome!</h2>
+            <h2 class="par1"><pre> My name is <span style="color: rgb(249, 128, 255);">Izere GodFirst</span>,
+and I’m passionate about technology.
+I love everything related to computers.
+ I offer  services in the following
+ areas: -Cyber Security
+        -Networking & Network Admin
+        -Coding
+        -Technical Support
+        -Coaching in Technology
+        -etc </pre> </h2>
+            
+        </div>
+
+    </div>
+    <div class="service" id="service">
+        <div class="covs" ></div>
+        <div class="par3"><p>GF Services</p></div>
+        <div class="ser">
+            <div class="cyber" id="s1" onmouseover="anim('s1')" onmouseout="anim2('s1')">
+                <p class="par4">cyber Security</p>
+                <img src="media/cs.jpeg" alt="cyber security image" class="sim">
+                <div class="stext">
+                    <p>Data security in this digital world is a priority.
+                         That’s why at GF, cybersecurity is one of our services.</p>
+                    <a href="cyber.html" class="link">Clic for more!</a>
+                </div>
+            </div>
+            <div class="nw" id="s2" onmouseover="anim('s2')" onmouseout="anim2('s2')">
+                <p class="par4">Networking</p>
+                <img src="media/nt.jpeg" alt="networking image" class="sim">
+                <div class="stext">
+                    <p>“Do you want the interconnection of your IT equipment,
+                        whether local or international? GFirst is your answer.”
+                    </p>
+                    <a href="network.html" class="link">Clic for more!</a>
+                </div>
+            </div>
+            <div class="fs" id="s3" onmouseover="anim('s3')" onmouseout="anim2('s3')">
+                <p class="par4">Coding</p>
+                <img src="media/fs.jpeg" alt="full image" class="sim">
+                <div class="stext">
+                    <p>Automating our tasks with appropriate apps, reducing client 
+                        visits in the sector by making your services accessible 
+                        anywhere and anytime in the world via your website.
+                         GFirst helps you be more productive.”</p>
+                    <a href="link/fstack.html" class="link">Clic for more!</a>
+
+                </div>
+            </div>
+            <div class="TS" id="s4" onmouseover="anim('s4')" onmouseout="anim2('s4')">
+                <p class="par4">Tech Support</p>
+                <img src="media/ts.jpg" alt="tsupport image" class="sim">
+                <div class="stext">
+                    <p>The good health of your IT equipment makes your work safer
+                         and easier. Our maintenance and monitoring
+                          can be your shield against discomfort at work.</p>
+                    <a href="ntech.html" class="link">Clic for more!</a>
+                </div>
+            </div>
+            <div class="coch" id="s5" onmouseover="anim('s5')" onmouseout="anim2('s5')">
+                <p class="par4" >Coaching</p>
+                <img src="media/coach.jpeg" alt="coaching image" class="sim">
+                <div class="stext">
+                    <p>“You or your company want to train in this IT field? Don’t panic, you’re in the right place.”</p>
+                    <a href="coaching.html" class="link">Clic for more!</a>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <div class="done" id="done" >
+        <p class="par3" style="margin-top: 0; width: 8.5cm;color: rgb(203, 254, 0);" onmouseover="dtail()">Our Done Works</p>
+        <div class="work">
+            <div class="dtext">
+                <p class="workpar">Yes, of course, we are in the job market.
+  It’s good to know that the work done here
+  is appreciated.
+  Some companies have trusted us, and we 
+  did not disappoint them.
+  Of course they appreciated our work.
+  Every time, we treat your workas our own
+  because whatinterests us most  is the 
+    of our clients.This makes prosperity those 
+          who have met us come back to us!
+            <pre> <span style="color:red">Note:</span><span style="color: yellow;">
+    clic on any company's
+    logo below to see
+    his details thanks!!</span></pre></p>
+            </div>
+            <div class="ddone">
+                <button onclick="show('ets')" class="ets"><img src="media/ets.jpg" alt="" class="ims1"></button>
+                <button class="cds" onclick="show('cds')"><img src="media/cds.jpg" alt="" class="ims2"></button>
+                <button class="bakita" onclick="show('bakita')"><img src="media/bakita.jpg" alt="" class="ims3"></button>
+                <button class="cfts" onclick="show('cfts')"><img src="media/mar.jpg" alt="" class="ims4"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="ets1" id="ets">
+        <div class="par3" style="width: 7cm;color: aqua;">ETS-K work</div>
+        <div class="bacbut" onclick="back('ets')"><span style="color: white">BACK</span></div>
+        <div class="etsgal">
+            <img style="width: 100%;height: 100%; position: relative;" src="media/gallery/ets.jpg" alt="image">
+            <div class="txtgalest"><p style="margin-top: 10px;">Here are some of our students after completing their training at ETS-K.</p></div>
+        </div>
+        <div class="etslvst">
+            <div class="etsparr">
+                <img src="media/ets.jpg" alt="" class="etslogo">
+                <div class="estwork">
+                    <p class="txtxlass">Our work was quite interesting because
+                         it encompassed all aspects of our services, whether in technical support or training</p>
+                    <p style="color: rgb(232, 135, 0);font-size: 35px;"> Starting with hardware maintenance!</p>
+                    <p class ="txtxlass" >we performed hardware maintenance on 
+                        computers that were in poor condition. After our
+                         maintenance and care, we were able to have more than fifty functional computers.Wich pretty cool🤗🤗🤗.</p>
+
+                         <p style="color: rgb(232, 135, 0);font-size: 35px;"> Software maintenance!</p>
+                         <p class ="txtxlass" >
+                            In software maintenance, we were able to install operating systems 
+                            such as Windows XP, Windows 7, and Windows 10, depending on the capacity 
+                            and power of the computers and their usage. We also updated the operating
+                             systems for some users. Additionally, we installed software like different 
+                             versions of the Office suite, Cisco Packet Tracer, antivirus programs like Kaspersky and Asmadav,
+                             VLC, browsers like Firefox, Chrome, and Brave, as well as network and printer drivers.
+                            </p>
+                            <p style="color: rgb(232, 135, 0);font-size: 35px;">Training</p>
+                            <p class ="txtxlass">
+                                The training sessions we provided, as shown in the photo on the 
+                                left, were professional courses or internships for students in
+                                 the fields of computer science, telecommunications,
+                                  and maintenance. Those who completed our training 
+                                  gained basic knowledge in journalism using software 
+                                like Adobe Audition for audio editing and Adobe Premiere 
+                                for video editing; in computer maintenance they gained skills such as installing 
+                                operating systems and software, etc.;In computer networking, 
+                                they studied network cabling,
+                                basic network configuration, RJ45 cable fabrication, and network management, etc.
+                            </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detail" id="detail">
+        <div class="par3" style=" width: 7cm;color: rgb(0, 0, 0);background-color: rgba(128, 128, 128, 0);width: 15cm;margin-top: 1cm;margin-left: 3cm;">Clic on company logo to focus the work!!</div>
+    </div>
+    <div class="cds1" id="cds">
+        <div class="par3" style="width: 7cm;color: aqua;">CDS-R work</div>
+        <div class="bacbut" onclick="back('cds')"><span style="color: white">BACK</span></div>
+        <div class="etsgal">
+        </div>
+        <div class="etslvst">
+            <div class="etsparr">
+                <img src="media/cds.jpg" alt="" class="etslogo">
+                <p style="color: white;font-size: 25px;">At CDS-Rohero, we handled the cabling of the 
+                    computer network, along with the maintenance and installation of sockets and fans.</p>
+               <p style="color: rgb(232, 135, 0);font-size: 35px;">Cabling!</p>
+               <p class ="txtxlass" >At CDS-Rohero, the cabling work included installing routers, switches,
+                 and RJ45 plugs in all offices. Additionally, we configured the Wi-Fi to ensure
+                  it was accessible to everyone in the area.</p>
+                <p style="color: rgb(232, 135, 0);font-size: 35px;">Maintenance</p>
+                <p class ="txtxlass">n terms of maintenance, we repaired the 
+                    air conditioning fan, installed electrical outlets, and fixed power strips.</p>
+            </div>
+        </div>
+    </div>
+    <div class="bakita1" id="bakita">
+        <div class="par3" style="width: 9cm;color: aqua;">BAKITA-G work</div>
+        <div class="bacbut" onclick="back('bakita')"><span style="color: white">BACK</span></div>
+        <div class="etsgal"></div>
+        <div class="etslvst">
+            <div class="etsparr">
+                <img src="media/bakita.jpg" alt="" class="etslogo">
+                <p style="color: white;font-size: 25px;">At Bakita Group, we focused on smart 
+                    home projects and the maintenance of IT equipment.</p>
+                    <p style="color: rgb(232, 135, 0);font-size: 35px;">Smart Home</p>
+                    <p style="color: white;font-size: 25px;">In relation to smart homes, we installed smart TVs
+                         and set up the internet network at Bakita Home, among other tasks</p>
+                    <p style="color: white;font-size: 25px;"><span style="font-size: 30px; color: yellow;">Note:</span> When it comes to smart homes, we offer more than just basic installations. We can set up surveillance cameras accessible worldwide via your smartphone or computer,
+                         smart locks, and fingerprint systems. For businesses,
+                          we can take automation and security to the next level</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="cfts1" id="cfts">
+        <div class="par3" style="width: 7cm;color: aqua;">CFTS work</div>
+        <div class="bacbut" onclick="back('cfts')"><span style="color: white">BACK</span></div>
+
+        <div class="etsgal">
+            <img style="width: 100%;height: 10cm; position: relative;" src="media/gallery/ctfs.jpg" alt="image">
+            <div class="txtgalest"><p style="margin-top: 10px;">Here are some of our images after on work their at CFTS.</p></div>
+        </div>
+        <div class="etslvst">
+            <div class="etsparr">
+                <img src="media/mar.jpg" alt="" class="etslogo">
+                <p style="color: white;font-size: 25px;">At CFTS (Computer Fonctionnary and Technology Services),
+                     we specialize in the sale and repair of IT equipment. Partnering with 
+                     us helps facilitate connections with some of our clients.</p>
+                <p style="color: white;font-size: 25px;"><span style="font-size: 30px; color: yellow;"><span>Note:</span>You can browse 
+                    our online inventory of IT equipment, including computers, routers, network switches
+                    , and more, by clicking the link below. You can view and purchase items from anywhere in the world,
+                     with delivery available </p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="apreciation"></div> -->
+    <footer id="contact" >
+        <div class="gf">
+            <p class="footertitle">GFirst</p>
+            <a href="" class="footlink1"><p>About us!</p></a>
+            <a href="" class="footlink1"><p>who we are?</p></a>
+            <a href="" class="footlink1" ><p>why trus us!</p></a>
+
+        </div>
+        <div class="footerskills">
+            <p class="footertitle">Skills</p>
+            <a onclick="anim('s1')" href="#s1" class="footlink1"><p>Cyber security</p></a>
+            <a onclick="anim('s2')" href="#s2" class="footlink1"><p>Networking</p></a>
+            <a onclick="anim('s3')" href="#s3" class="footlink1"><p>coding</p></a>
+            <a onclick="anim('s4')" href="#s4" class="footlink1"><p>technical Support</p></a>
+            <a onclick="anim('s5')" href="#s5" class="footlink1"><p>Coaching</p></a>
+            
+        </div>
+        <div class="footerservice">
+            <p class="footertitle">Services</p>
+            <a href="network.html" class="footlink1"><p>Network Admin & Manage</p></a>
+            <a href="coaching.html" class="footlink1"><p>training</p></a>
+            <a href="support.html" class="footlink1"><p>Maintenance</p></a>
+            <a href="ntech.html" class="footlink1"><p>New Tech</p></a>
+        </div>
+        <div class="footersmedia" >
+            <p class="footertitle">Social media</p>
+            <a href="https://pin.it/2uI3QKNxJ" target="_blank" class="footlink1"><p>Pinterest</p></a>
+            <a href="https://www.youtube.com/@hkblaiseizere4488" target="_blank" class="footlink1"><p>Youtube</p></a>
+            <a href="https://x.com/Hkblaisei" target="_blank" class="footlink1"><p>X</p></a>
+            <a href="https://www.facebook.com/groups/gfirst1/" target="_blank" class="footlink1"><p>Facebook</p></a>
+        </div>
+        <div class="footercontact">
+            <p class="footertitle">Contacts</p>
+            <a href="mailto:hkblaiseg@gmail.com"  class="footlink1"><p>Gmail:Hkblaiseg@gmail.com</p></a>
+            <a href="tel:+25769955535" class="footlink1"><p>Tel:+25769955535</p></a>
+            <a href="te:+25769955535" class="footlink1"><p>Whatsapp:+25769955535</p></a>
+            <a href="" class="footlink1"><p></p></a>
+        </div>
+    </footer>
+</body>
+</html>

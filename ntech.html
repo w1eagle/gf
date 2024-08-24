@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking</title>
+    <script>
+            function changelang(){
+            const x = document.getElementById('changer');
+            const s = document.getElementById('change1');
+            const z = document.getElementById('change2');
+            const t = document.getElementById('test');
+
+            
+            if(x.style.marginLeft=='-3.5cm'){
+                
+                s.style.display='none';
+                x.style.marginLeft='-1.5cm';
+                z.style.display='flex';
+                console.log('pressed')
+                t.innerText='hello world this is GodFirt'
+                
+            }else{
+                z.style.display='none';
+                x.style.marginLeft='-3.5cm'
+                s.style.display='flex';
+                t.innerText='Bonjour le monde celui ci est Dieu Devant'
+                
+
+            }}
+        function anim(i){
+            const x = document.getElementById(i);
+            x.style.animationPlayState='running';
+        }
+        function anim2(i){
+            const x = document.getElementById(i);
+            x.style.animationPlayState='paused';
+        }
+        function mmenu(){
+            const x = document.getElementById('f1');
+            
+            if (x.style.display=='none'){
+                x.style.display='grid';
+            }else {
+                x.style.display='none';
+            }
+            
+        }
+    </script>
+    <style>
+        @keyframes frame1 {
+            0%{border-width: 5px;border-style: solid;;}
+            1%{border-width: 5px;border-style: solid;border-color: red;}
+            25%{border-width: 5px;border-style: solid;border-color: rgb(106, 0, 255);}
+            50%{border-width: 5px;border-style: solid;border-color: rgb(255, 0, 157);}
+            75%{border-width: 5px;border-style: solid;border-color: rgb(26, 255, 0);}
+            100%{border-width: 5px;border-style: solid;border-color: rgb(255, 208, 0);}
+        }
+        body {
+            margin: 0;
+        }
+        header {
+            background:radial-gradient(red,blue);
+            display: flex;
+            position: fixed;
+            width: 100%;
+            height: 3cm;
+        }
+        @media only screen and (max-width: 767px){
+            header{
+                max-width: 100%;
+            }}
+        .logo {
+            width: 3cm;
+            height: 3cm;
+            border-radius: 15%;
+        }
+        @media only screen and (max-width: 767px){
+            .logo{
+                /* width: 100%; */
+            }}
+        .langbutt{
+            display: flex;
+            height: 1.5cm;
+            width: 4cm;
+            background-color: rgba(0, 0, 0, 0);
+            position: relative;
+            margin-top: 25px;
+            border: 0;
+        }
+        @media only screen and (max-width: 767px){
+            .langbutt{
+                display: none;
+            }}
+        .langbuttimg1{
+            height: 1.5cm;
+            width: 3.5cm;
+            margin-left: -7px;
+            position: relative;
+        }
+        .langbuttimg2{
+            float: left;
+            width: 1.5cm;
+            height: 1.5cm;
+            position: relative;
+            margin-left: -3.5cm;
+            border-radius: 30%;
+        }
+        .langbutttxt1{
+            display: flex;
+            height: 1cm;
+            width: 2cm;
+            position: relative;
+            font-size: 18px;
+        
+        }
+        .langbutttxt2{
+            display: none;
+            height: 1cm;
+            width: 2cm;
+            position: relative;
+            font-size: 18px;
+            margin-left: -3.2cm;
+        
+        }
+        .mplace{
+            background-color: black;
+            height: 2cm;
+            width: 3cm;
+            margin-left: 25%;
+        }
+        @media only screen and (max-width: 767px){
+            .mplace{
+                display: none;
+            }}
+        .menu {
+            width: 7cm;
+            height: 1.5cm;
+            /* background-color: black; */
+            margin-left: 16cm;
+            display: flex;
+            position: relative;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        @media only screen and (max-width: 767px){
+            .menu{
+                margin-left: 0cm;
+                width: 5cm;
+                height: 1cm;
+            }}
+        .linkhome{
+            position: relative;
+            background-color: rgba(128, 128, 128, 0.662);
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            width: 2cm;
+            height: 1cm;
+            border-radius: 45% 25%;
+
+        }
+        .contact {
+            border-radius: 45% 25%;
+            height: 1cm;
+            position: relative;
+            background-color: rgba(128, 128, 128, 0.662);
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            width: 2.5cm;
+        }
+        .butimg {
+            height: 1cm;
+            width: 1.5cm;
+            /* margin-left: 5px; */
+            background-color: rgba(255, 255, 255, 0);
+            
+            
+        }
+        .div1{
+            margin: 5px;
+            height: 9.9cm;
+            width: 40%;
+            background: radial-gradient(rgb(114, 19, 19),black);
+            position: fixed;
+            display: none;
+            /* float: right; */
+            border-radius: 15%;
+            margin-top: -12cm;
+            margin-left: 60%;
+        }
+        @media only screen and (max-width: 767px){
+            .div1{
+                margin-left: 0;
+                width: 10cm;
+                margin-top: -16cm;
+            }}
+        .lf1 {
+            width: 80%;
+            height: 1.5cm;
+            background-color: white;
+            text-align: center;
+            margin-left: 10%;
+            border-bottom-left-radius: 30%;
+            border-bottom-right-radius: 30%;
+            animation-name: frame1;
+            animation-play-state: paused;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .lf2 {
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            text-decoration: none;
+        }
+    
+        .div2{
+            width: 100%;
+            height: 15cm;
+            /* position: relative; */
+            display: flex;
+            /* background-color: gray; */
+            
+        }
+        @media only screen and (max-width: 767px){
+            .div2{
+                margin-top: 0;
+                display: block;
+                height: 20cm;
+                background-color: green;
+            }}
+        .imgx {
+            width: 100%;
+            height: 15cm;
+        }
+        @media only screen and (max-width: 767px){
+            .imgx{
+                height: 10cm;
+                margin-top: 3cm;
+            }}
+        .table {
+            background-color: rgb(214, 208, 250);
+            height: 95%;
+            width: 40%;
+            /* position: relative; */
+            display: grid;
+            border-radius: 30% 0 30% 0;
+        }
+        @media only screen and (max-width: 767px){
+            .table{
+                overflow: hidden;
+                width: 95%;
+                height: 8cm;
+                display: block;
+                margin-top: -1.5cm;
+            }}
+        ul {
+            margin-left: 2%;
+            margin-top: 4cm;
+            font-size: 40px;
+            gap: 10px;
+        }
+        @media only screen and (max-width: 767px){
+            ul{
+                margin-left: -15px;
+                max-width: 0;
+                font-size: 20px;
+                margin-top: 2cm;
+            }}
+        li {
+            background-color: white;
+             margin-bottom: 20px;
+             width: 15cm;
+        }
+        @media only screen and (max-width: 767px){
+            li{
+                height: 1cm;
+            }}
+
+        .div3{
+            width: 80%;
+            height: 15cm;
+            /* position: relative; */
+            /* display: flex; */
+            background-color: #ff0000;
+        }
+        @media only screen and (max-width: 767px){
+            .div3{
+                width: 100%;
+                /* margin-top: 0; */
+                display: block;
+                height: auto;
+            }}
+        h1 {
+            font-size: 50px;
+            margin-left: 30%;
+            text-decoration: dotted blue 10px underline;
+        } 
+        .partxt{
+          background: radial-gradient(rgb(10, 10, 81),black);color: white;
+          font-size: 35px;
+        }
+        @media only screen and (max-width: 767px){
+            .partxt{
+                width: 100%;
+                height: auto;
+                font-size: 25px;
+
+            }}  
+        footer {
+            background: radial-gradient(rgb(71, 52, 21),rgb(0, 0, 0));
+            width: 100%;
+            height: 10cm;
+            position: relative;
+            display: flex;
+        
+            /* font-size: 25px; */
+        
+        }
+        @media only screen and (max-width: 767px){
+            footer{
+                display: block;
+                height: 16cm;
+            }}
+        .footerservice {
+            width: 20%;
+            height: 100%;
+            display: grid;
+            position: relative;
+            color: bisque;
+            font-size: 25px;
+            margin-left: -2.5cm;
+            height: auto;
+            background-color: black;
+
+        }
+        @media only screen and (max-width: 767px){
+            .footerservice{
+                font-size: 15px;
+                margin-left: 5cm;
+                margin-top: -9cm;
+                width: 30%;
+                display: block;
+                height: auto;
+            }}
+        .footerskills{
+            width: 20%;
+            height: 100%;
+            display: grid;
+            position: relative;
+            color: bisque;
+            font-size: 25px;
+            margin-left: -3cm;
+        }
+        @media only screen and (max-width: 767px){
+            .footerskills{
+                font-size: 15px;
+                margin-left: 0cm;
+                margin-top: 0;
+                width: 30%;
+                display: block;
+                background-color: black;
+                height: auto;
+            }}
+        .footercontact{
+            width: 20%;
+            height: 100%;
+            display: grid;
+            position: relative;
+            color: bisque;
+            font-size: 25px;
+        }
+        @media only screen and (max-width: 767px){
+            .footercontact{
+                display: block;
+                font-size: 15px;
+                width: 30%;
+                height: auto;
+                margin-top: -0.5cm;
+                background-color: black;
+                          
+            }}
+        .footersmedia{
+            color: bisque;
+            width: 20%;
+            height: 100%;
+            display: grid;
+            position: relative;
+            font-size: 25px;
+       
+        }
+        @media only screen and (max-width: 767px){
+            .footersmedia{
+                font-size: 15px;
+                margin-left: 5cm;
+                margin-top: 0;
+                display: block;
+                /* background-color: black; */
+                height: auto;
+                width: 40%;
+                background-color: black;
+            }}
+        .gf{
+            color: bisque;
+            width: 20%;
+            height: 100%;
+            display: grid;
+            position: relative;
+            font-size: 25px;
+            margin-left: 0.5cm;
+            height: auto;
+            
+            /* row-gap: -3cm; */
+        }
+        @media only screen and (max-width: 767px){
+            .gf{
+                background-color: black;
+                /* gap: 0cm; */
+                font-size: 15px;
+                margin-left: 0;
+                width: 30%;
+                display: block;
+                height: auto;
+            }}
+        .footertitle {
+           font-size: 45px;
+           text-decoration: underline double rgb(255, 0, 225) 3px;
+        }
+        @media only screen and (max-width: 767px){
+            .footertitle{
+                font-size: 17px;
+                max-height: 0.3cm
+            }}
+        .footlink1 {
+            color: white;
+            max-height: 0.2cm;
+            
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/media/logo.jpg" alt="logo" class="logo" >
+        <button class="langbutt" onclick="changelang()">
+            <img src="/media/lbutt1.png" alt="" class="langbuttimg1">
+            <img id="changer" src="/media/lbutt2.png" alt="" class="langbuttimg2">
+            <p class="langbutttxt1" id="change1">Francais</p>
+            <p id="change2" class="langbutttxt2">English</p>
+        </button>
+        <div class="mplace"></div>
+        <div class="menu">
+            <a href="/index.html" class="linkhome">Home</a>
+            <a href="" class="contact">Contacts</a>
+            <button class="butimg" onclick="mmenu()"><img style="margin-left: -5px;margin-top: -3px;height: 1cm;width: 1.5cm;" src="/media/menu.png" alt="menu" ></button>
+        </div>
+
+    </header>
+    <div class="div2">
+        <img src="/media/ntw/iot.jpeg" class="imgx">
+        <div class="table">
+            <ul >
+                <li >What is New techologies?</li>
+                <li>how can you start with it? </li>
+                <li>Why is New tech included in GF’s services?</li>
+            </ul>
+        </div>
+    </div>
+    <div class="div1" id="f1">
+        <div id="f2" class="lf1" onmouseover="anim('f2')" onmouseout="anim2('f2')"><a href="cyber.html" class="lf2">Cyber Security</a></div>
+        <div id="f3" class="lf1" onmouseover="anim('f3')" onmouseout="anim2('f3')" ><a href="network.html" class="lf2">Networking</a></div>
+        <div id="f4" class="lf1" onmouseover="anim('f4')" onmouseout="anim2('f4')"><a href="fstack.html" class="lf2">Coding</a></div>
+        <div  id="f5" class="lf1" onmouseover="anim('f5')" onmouseout="anim2('f5')"><a href="support.html" class="lf2">Technical Support</a></div>
+        <div  id="f6" class="lf1" onmouseover="anim('f6')" onmouseout="anim2('f6')"><a href="coaching.html" class="lf2">Coaching</a></div>
+    </div>
+    <div class="partxt">
+        <p >Sorry, this page is currently under development. It will be available soon. 
+            If you have any specific questions,
+             please don’t hesitate to contact us using the information provided below or clic to home to back at the main page</p>
+    </div>
+    <!-- <div class="div4"></div> -->
+    <footer id="contact" >
+        <div class="gf">
+            <p class="footertitle">GFirst</p>
+            <a href="" class="footlink1"><p>About us!</p></a>
+            <a href="" class="footlink1"><p>who we are?</p></a>
+            <a href="" class="footlink1" ><p>why trus us!</p></a>
+
+        </div>
+        <div class="footerskills">
+            <p class="footertitle">Skills</p>
+            <a onclick="anim('s1')" href="#s1" class="footlink1"><p>Cyber security</p></a>
+            <a onclick="anim('s2')" href="#s2" class="footlink1"><p>Networking</p></a>
+            <a onclick="anim('s3')" href="#s3" class="footlink1"><p>coding</p></a>
+            <a onclick="anim('s4')" href="#s4" class="footlink1"><p>technical Support</p></a>
+            <a onclick="anim('s5')" href="#s5" class="footlink1"><p>Coaching</p></a>
+            
+        </div>
+        <div class="footerservice">
+            <p class="footertitle">Services</p>
+            <a href="network.html" class="footlink1"><p>Network Admin & Manage</p></a>
+            <a href="coaching.html" class="footlink1"><p>training</p></a>
+            <a href="support.html" class="footlink1"><p>Maintenance</p></a>
+            <a href="ntech.html" class="footlink1"><p>New Tech</p></a>
+        </div>
+        <div class="footersmedia" >
+            <p class="footertitle">Social media</p>
+            <a href="https://pin.it/2uI3QKNxJ" target="_blank" class="footlink1"><p>Pinterest</p></a>
+            <a href="https://www.youtube.com/@hkblaiseizere4488" target="_blank" class="footlink1"><p>Youtube</p></a>
+            <a href="https://x.com/Hkblaisei" target="_blank" class="footlink1"><p>X</p></a>
+            <a href="https://www.facebook.com/groups/gfirst1/" target="_blank" class="footlink1"><p>Facebook</p></a>
+        </div>
+        <div class="footercontact">
+            <p class="footertitle">Contacts</p>
+            <a href="mailto:hkblaiseg@gmail.com"  class="footlink1"><p>Gmail:Hkblaiseg@gmail.com</p></a>
+            <a href="tel:+25769955535" class="footlink1"><p>Tel:+25769955535</p></a>
+            <a href="te:+25769955535" class="footlink1"><p>Whatsapp:+25769955535</p></a>
+            <a href="" class="footlink1"><p></p></a>
+        </div>
+    </footer>
+</body>
+</html>
